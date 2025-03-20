@@ -93,13 +93,13 @@ function DateCalculator(initialDate = new Date()) {
   this.currentDate = new Date(initialDate);
 
   this.addDays = function (days) {
-    const actualDay = this.currentDate.getDate();
-    this.currentDate.setDate(actualDay + days);
+    const currentDay = this.currentDate.getDate();
+    this.currentDate.setDate(currentDay + days);
   };
 
   this.subtractDays = function (days) {
-    const actualDay = this.currentDate.getDate();
-    this.currentDate.setDate(actualDay - days);
+    const currentDay = this.currentDate.getDate();
+    this.currentDate.setDate(currentDay - days);
   };
 
   this.getResult = function () {
